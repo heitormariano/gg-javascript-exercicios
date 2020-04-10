@@ -1,10 +1,10 @@
-function verificarIdade() {
+function verificar() {
     //variáveis iniciais
     let tipoPessoa = '';
     let sexoEscolhido = '';
 
-    let msg = window.document.getElementById('mensagem');
-    let img = window.document.getElementById('foto');
+    let divResultado = window.document.querySelector('div#resultado');
+    let img = window.document.createElement('img');
 
     let anoAtual = new Date().getFullYear();
     let anoInformado = window.document.getElementById('idade').valueAsNumber;
@@ -27,35 +27,37 @@ function verificarIdade() {
         if (idade >= 0 && idade < 12) {
             tipoPessoa = 'Criança';
             if (sexoEscolhido === 'masculino') {
-                img.src = './img/crianca-menino_editado.png';
+                img.setAttribute('src', './img/crianca-menino_editado.png');
             } else {
-                img.src = './img/crianca-menina_editado.png';
+                img.setAttribute('src', './img/crianca-menina_editado.png');
             }
         } else if (idade >= 12 && idade < 18) {
             tipoPessoa = 'Adolescente';
             if (sexoEscolhido === 'masculino') {
-                img.src = './img/adolescente-homem_editado.png';
+                img.setAttribute('src', './img/adolescente-homem_editado.png');
             } else {
-                img.src = './img/adolescente-mulher_editado.png';
+                img.setAttribute('src', './img/adolescente-mulher_editado.png');
             }
         } else if (idade >= 18 && idade < 60) {
             tipoPessoa = 'Adulto';
             if (sexoEscolhido === 'masculino') {
-                img.src = './img/adulto-homem_editado.png';
+                img.setAttribute('src', './img/adulto-homem_editado.png');
             } else {
-                img.src = './img/adulto-mulher_editado.png';
+                img.setAttribute('src', './img/adulto-mulher_editado.png');
             }
         } else {
             tipoPessoa = 'Idoso';
             if (sexoEscolhido === 'masculino') {
-                img.src = './img/idoso-homem_editado.png';
+                img.setAttribute('src', './img/idoso-homem_editado.png');
             } else {
-                img.src = './img/idoso-mulher_editado.png';
+                img.setAttribute('src', './img/idoso-mulher_editado.png');
             }
         }
 
-        //compondo a mensagem final
-        msg.innerText = `${tipoPessoa} com ${idade} ano(s) de idade`;
+        //compondo o resultado para o usuário (inserindo mensagem nova e imagem)
+        divResultado.innerHTML = `${tipoPessoa} do sexo ${sexoEscolhido} com ${idade} ano(s) de idade`;
+        divResultado.appendChild(img);
+        divResultado.style.textAlign = 'center';
     } else {
         window.alert('[ERRO] Verifique o ano informado');
     }
