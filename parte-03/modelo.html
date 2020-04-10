@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilo.css" />
+        <title>Hora do dia</title>
+    </head>
+    <body>
+        <header>
+            <h1>Verificador de Idade</h1>
+        </header>
+
+        <section>
+            <div id="formulario">
+                <form action="" method="GET">
+                    <div>
+                        <label for="idade">Ano de nascimento:</label>
+                        <input type="number" name="idade" id="idade" />
+                    </div>
+
+                    <div>
+                        <label>Sexo:</label>
+
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="sexo" id="masculino" value="masculino" />
+
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" name="sexo" id="feminino" value="feminino" />
+                    </div>
+
+                    <div>
+                        <input type="button" value="Verificar" onclick="verificarIdade()" />
+                    </div>
+
+                    <div id="mensagem">
+                        preencha os dados acima para ver o resutlado
+                    </div>
+                    <div id="imagem">
+                        <img src="" alt="" />
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>JS - Curso em Vídeo</p>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
