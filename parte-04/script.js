@@ -22,18 +22,14 @@ function validarValorCampos(inicio, fim, passo) {
 }
 
 function calcular() {
-    let inicio;
-    let fim;
-    let passo;
-
     let resultadoPreenchimento;
     let resultadoValorCampos;
 
     let retorno = document.getElementById('msg-retorno');
 
-    inicio = document.getElementById('inicio').valueAsNumber;
-    fim = document.getElementById('fim').valueAsNumber;
-    passo = document.getElementById('passo').valueAsNumber;
+    let inicio = document.getElementById('inicio').valueAsNumber;
+    let fim = document.getElementById('fim').valueAsNumber;
+    let passo = document.getElementById('passo').valueAsNumber;
 
     resultadoPreenchimento = validarPreenchimento(inicio, fim, passo);
 
