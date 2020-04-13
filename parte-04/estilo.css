@@ -1,0 +1,52 @@
+body {
+    background: rgb(69, 133, 216);
+    font-style: normal;
+    font-size: 15pt;
+    font-family: Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.739);
+}
+
+section > h4 {
+    text-align: center;
+    margin: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    margin-top: 5px;
+}
+
+input[type='number'] {
+    border: 1px solid rgb(160, 153, 153);
+    width: 200px;
+}
+
+input[type='button'] {
+    margin-top: 10px;
+}
+
+div#msg-retorno {
+    padding: 3px;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
