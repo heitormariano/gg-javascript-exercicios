@@ -25,11 +25,11 @@ function calcular() {
     let resultadoPreenchimento;
     let resultadoValorCampos;
 
-    let retorno = document.getElementById('msg-retorno');
-
     let inicio = document.getElementById('inicio').valueAsNumber;
     let fim = document.getElementById('fim').valueAsNumber;
     let passo = document.getElementById('passo').valueAsNumber;
+
+    let retorno = document.getElementById('msg-retorno');
 
     resultadoPreenchimento = validarPreenchimento(inicio, fim, passo);
 
