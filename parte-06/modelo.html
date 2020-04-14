@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilo.css" />
+        <title>Tabuada</title>
+    </head>
+    <body>
+        <header>
+            <h1>Tabuada</h1>
+        </header>
+
+        <section>
+            <h4>Gerar Tabuada</h4>
+            <div id="formulario">
+                <form method="POST">
+                    <label for="numero">Número:</label>
+                    <input type="number" name="numero" id="numero" />
+                    <input type="button" value="Gerar Tabuada" onclick="gerarTabuada()" />
+                </form>
+            </div>
+            <div id="resultado"></div>
+        </section>
+
+        <footer>
+            <p>JS - Curso em Vídeo</p>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
