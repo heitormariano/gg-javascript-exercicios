@@ -14,6 +14,7 @@ function gerarTabuada() {
         for (let i = 0; i <= 10; i++) {
             let optTexto = '';
             optTexto = optTexto.concat(`${numero} x ${i} = ${numero * i}`);
+            
             let option = document.createElement('option');
             option.text = optTexto;
             option.value = `opt-${numero * i}`;
