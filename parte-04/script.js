@@ -10,11 +10,11 @@ function validarValorCampos(inicio, fim, passo) {
         resultado = 'Início e Fim iguais. Mude os valores, por favor.';
     } else if (inicio > fim) {
         if (passo > 0) {
-            resultado = 'O valor do Passo precisa ser negativo (Início é maior que Fim)';
+            resultado = 'O valor do Passo precisa ser negativo (Início é maior do que Fim)';
         }
     } else if (inicio < fim) {
         if (passo < 0) {
-            resultado = 'O valor de Passo precisa ser positivo (Início é maior do que Fim)';
+            resultado = 'O valor de Passo precisa ser positivo (Início é menor do que Fim)';
         }
     }
 
